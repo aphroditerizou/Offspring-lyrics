@@ -68,6 +68,8 @@ for element in lyrics_text_list:
     lyrics_file.write(element + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n")
 lyrics_file.close()
 ```
+
+## Cleaning the data
 After this, I continued the project in the second file, lyrics_analysis, so I rewrote the elements of lyrics_file into a list named lyrics_text_list_new. I used the string "Writer(s): " as separator, because this string appeared exactly once in every song:
 ```
 with open('all_lyrics') as f:
@@ -150,6 +152,8 @@ top_15_counts.append(words_dataframe['counts'][231])
 top_15_words.append(words_dataframe['word'][311])
 top_15_counts.append(words_dataframe['counts'][311])
 ```
+
+## Creating the visualizations
 I then created the bar chart, based on the contents of top_15_words and top_15_counts, using the following code:
 ```
 fig = plt.figure()
