@@ -162,7 +162,6 @@ for i, v in enumerate(top_15_counts):
     ax.text(v - 23, i + .25, str(v), color='white')
 plt.show()
 ```
-The resulting bar chart is this:   
 ![Bar chart](https://raw.githubusercontent.com/aphroditerizou/Offspring-lyrics/main/bar%20chart.png)   
    
 Next, I created a word cloud for the 15 most common words that appeared in the previous bar chart, using this code:
@@ -173,7 +172,6 @@ plt.imshow(wordcloud1, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 ```
-The resulting word cloud is this:   
 ![Word cloud](https://raw.githubusercontent.com/aphroditerizou/Offspring-lyrics/main/wordcloud%20top%2015.png)   
 
 Then, I created a word cloud for the most common words (including articles and other parts of speech I excluded earlier):
@@ -183,7 +181,6 @@ plt.imshow(wordcloud2, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 ```
-The resulting word cloud is this:   
 ![Word cloud](https://raw.githubusercontent.com/aphroditerizou/Offspring-lyrics/main/word%20cloud%20top%20500.png)   
 
 Lastly, I created a word cloud for most common words (including articles and other parts of speech I excluded earlier) in the shape of The Offspring logo:
@@ -195,5 +192,4 @@ plt.imshow(wordcloud3, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 ```
-The resulting word cloud is this:   
 ![Word cloud](https://raw.githubusercontent.com/aphroditerizou/Offspring-lyrics/main/word%20cloud%20logo%20shape.png)   
