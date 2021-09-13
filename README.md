@@ -162,4 +162,5 @@ for i, v in enumerate(top_15_counts):
     ax.text(v - 23, i + .25, str(v), color='white')
 plt.show()
 ```
-The resulting bar chart was this:
+The resulting bar chart is this:
+![alt text](https://github.com/[aphroditerizou]/[Offspring-lyrics]/blob/[main]/image.jpg?raw=true)
