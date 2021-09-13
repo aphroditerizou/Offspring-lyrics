@@ -96,3 +96,25 @@ ax.set_title('The 15 most common words in Offspring lyrics')
 for i, v in enumerate(top_15_counts):
     ax.text(v - 23, i + .25, str(v), color='white')
 plt.show()
+
+# word cloud for 15 most common words selected previously:
+top_15_dict = dict(zip(top_15_words, top_15_counts))
+wordcloud1 = WordCloud(max_font_size=100).generate_from_frequencies(top_15_dict)
+plt.imshow(wordcloud1, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
+# word cloud for most common words (including articles and other parts of speech I excluded earlier):
+wordcloud2 = WordCloud(max_words=500, max_font_size=100, background_color="white").generate_from_frequencies(counts)
+plt.imshow(wordcloud2, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+
+# word cloud for most common words (including articles and other parts of speech I excluded earlier) in the shape
+# of The Offspring logo:
+mask = np.array((Image.open("C:/Users/AFRIZ/Desktop/offspring songs/logo.jpg")))
+wordcloud3 = WordCloud(mask=mask, background_color="white", max_words=500, width=mask.shape[1], height=mask.shape[0])
+wordcloud3.generate_from_frequencies(counts)
+plt.imshow(wordcloud3, interpolation='bilinear')
+plt.axis("off")
+plt.show()
