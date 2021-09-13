@@ -163,4 +163,4 @@ for i, v in enumerate(top_15_counts):
 plt.show()
 ```
 The resulting bar chart is this:
-![alt text](https://github.com/[aphroditerizou]/[Offspring-lyrics]/blob/[main]/image.jpg?raw=true)
+![Bar chart](https://raw.githubusercontent.com/aphroditerizou/Offspring-lyrics/main/bar%20chart.png)
